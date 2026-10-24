@@ -1,0 +1,185 @@
+.contact {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  padding: 80px 40px 60px;
+
+  border-top: 1px solid var(--border);
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.contact-header {
+  max-width: 900px;
+}
+
+.contact-header h2 {
+  margin: 0;
+
+  font-size: clamp(4rem, 8vw, 8rem);
+  line-height: 0.9;
+  font-weight: 500;
+  letter-spacing: -0.065em;
+}
+
+.contact-header h2 span {
+  display: block;
+
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 500;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.contact-content {
+  margin-top: 80px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+
+  align-items: end;
+}
+
+.contact-description {
+  max-width: 500px;
+  margin: 0;
+
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+
+/* =========================================
+   ACTION
+========================================= */
+
+.contact-action {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid var(--text);
+
+  font-size: 1rem;
+  font-weight: 500;
+
+  transition:
+    gap 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.contact-link span {
+  transition: transform 0.3s ease;
+}
+
+.contact-link:hover {
+  gap: 20px;
+}
+
+.contact-link:hover span {
+  transform: translate(3px, -3px);
+}
+
+
+/* =========================================
+   CONTACT DETAILS
+========================================= */
+
+.contact-details {
+  margin-top: 28px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-details a {
+  margin: 0;
+
+  color: var(--muted);
+  font-size: 0.82rem;
+
+  transition:
+    color 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.contact-details a:hover {
+  color: var(--text);
+  opacity: 1;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.contact-footer {
+  margin-top: 140px;
+  padding-top: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+
+  border-top: 1px solid var(--border);
+
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.contact-footer p {
+  margin: 0;
+}
+
+.contact-footer p:nth-child(2) {
+  color: var(--muted);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 900px) {
+  .contact {
+    padding: 100px 32px 50px;
+  }
+
+  .contact-header h2 {
+    font-size: clamp(3.5rem, 15vw, 6rem);
+  }
+
+  .contact-content {
+    margin-top: 60px;
+
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .contact-footer {
+    margin-top: 100px;
+
+    flex-direction: column;
+    gap: 10px;
+  }
+}
