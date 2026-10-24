@@ -8,9 +8,9 @@ function Navbar() {
       </a>
 
       <div className="navbar-links">
-        <a href="#about">About</a>
-        <a href="#expertise">Expertise</a>
         <a href="#experience">Experience</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#about">About</a>
       </div>
 
       <a href="#contact" className="navbar-contact">
