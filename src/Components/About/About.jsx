@@ -7,8 +7,8 @@ function About() {
         <p className="section-eyebrow">ABOUT MATANMI</p>
 
         <h2>
-          There’s more to the
-          <span>work than the work.</span>
+          Beyond the
+          <span>work.</span>
         </h2>
       </div>
 
